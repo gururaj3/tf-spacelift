@@ -1,6 +1,6 @@
 version: "1"
 module_version: 0.0.1
-runner_image: spacelift/runner:latest
+#runner_image: spacelift/runner:latest
 
 test_defaults:
   before_init: ["terraform fmt -check"]
