@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
 }
 
 module "gurus_webserver" {
-    source = "../../terraform/aa-dev"
+    source  = "spacelift.io/gururaj3/aa-dev/gururaj"
     vpc_id = aws_vpc.main.id
     cidr_block = "10.0.0.0/16"
     webserver_name = "Guru"
