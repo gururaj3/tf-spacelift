@@ -4,14 +4,17 @@ variable "vpc_id" {
 
 variable "cidr_block" {
     type = string
+    default = "10.0.0.0/16"
 }
 
 variable "webserver_name" {
     type = string
+    default = "Guru-default"
 }
 
 variable "ami" {
     type = string
+    default = "ami-08e4e35cccc6189f4"
 }
 
 variable "instance_type" {
